@@ -90,5 +90,9 @@ For CI Integration, we want to start a server with our deployment, then trigger 
 2. Added the start-server-and-test dependency
 3. Build our app (npm run build)
 4. Modify package.json with some script commands to start the server (pointed to build files) and run cypress headless
-Can now move on to configuring Git Actions and modifying our YAML file
+
+### Setup Github Actions
+1. Create a .github/workflows folder with our main.yml file
+
+
 
