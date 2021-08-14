@@ -22,9 +22,6 @@ describe('react app test', () => {
     cy.get('[id="job"').type('Tester')
     cy.contains('Submit').click()
 
-    cy.get('[id="name"]').type('Rich')
-    cy.get('[id="job"').type('Tester')
-    cy.contains('Submit').click()
   })
 
 })
