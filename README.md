@@ -74,3 +74,21 @@ npm install cypress --save-dev
 npm start
 npx cypress open
 npx cypress run --headless
+npm run build
+npm run-script ci:ci-run
+
+### Cypress Integration
+Cypress has a test runner (npx cypress open)
+1. Install cypress dependency (which creates our cypress folder)
+2. Create a .eslintrc.json file (and install our eslint-plugin-cypress dependency) so VSCode can understand library
+3. Update our spec file(s)
+4. Test the UI and also test the headless execution
+
+### CI Pipeline Integration (prior to configuring Git Actions)
+For CI Integration, we want to start a server with our deployment, then trigger cypress to run headless
+1. Added http-server to serve our app
+2. Added the start-server-and-test dependency
+3. Build our app (npm run build)
+4. Modify package.json with some script commands to start the server (pointed to build files) and run cypress headless
+Can now move on to configuring Git Actions and modifying our YAML file
+
