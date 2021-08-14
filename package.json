@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^8.2.0"
+    "cypress": "^8.2.0",
+    "eslint-plugin-cypress": "^2.11.3"
   }
 }
