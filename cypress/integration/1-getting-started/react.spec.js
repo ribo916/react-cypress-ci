@@ -9,9 +9,22 @@ describe('react app test', () => {
     cy.contains('React')
   })
 
-  it('is running locally', ()=> {
-    // totally a bad test. only works locally
-    cy.url().should('include', 'localhost:3000')
+  it('can add a handful of records', ()=> {
+    cy.get('[id="name"]').type('Rich')
+    cy.get('[id="job"').type('Tester')
+    cy.contains('Submit').click()
+
+    cy.get('[id="name"]').type('Rich')
+    cy.get('[id="job"').type('Tester')
+    cy.contains('Submit').click()
+
+    cy.get('[id="name"]').type('Rich')
+    cy.get('[id="job"').type('Tester')
+    cy.contains('Submit').click()
+
+    cy.get('[id="name"]').type('Rich')
+    cy.get('[id="job"').type('Tester')
+    cy.contains('Submit').click()
   })
 
 })
