@@ -9,7 +9,7 @@ describe('react app test', () => {
     cy.contains('React')
   })
 
-  it('can add a handful of records', ()=> {
+  it('can add a handful of records', () => {
     cy.get('[id="name"]').type('Rich')
     cy.get('[id="job"').type('Tester')
     cy.contains('Submit').click()
@@ -21,7 +21,10 @@ describe('react app test', () => {
     cy.get('[id="name"]').type('Rich')
     cy.get('[id="job"').type('Tester')
     cy.contains('Submit').click()
+  })
 
+  it('can delete a record', () => {
+    cy.contains('Delete').click()
   })
 
 })
