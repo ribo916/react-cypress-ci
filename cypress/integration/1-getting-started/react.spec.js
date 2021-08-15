@@ -12,7 +12,7 @@ describe('react app test', () => {
   })
 
   it('loads our site and clears storage', () => {
-    cy.visit('baseUrl');
+    cy.visit('http://localhost:3000');
     cy.clearLocalStorage();
     cy.contains('React')
   })
