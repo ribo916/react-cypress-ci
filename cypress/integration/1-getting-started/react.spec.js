@@ -1,11 +1,19 @@
 /// <reference types="cypress" />
 
 describe('react app test', () => {
+  
   beforeEach(() => {
-    cy.visit('http://localhost:3000/')
+    // cy.visit('http://localhost:3000/')
+    cy.log('Starting all tests...')
   })
 
-  it('says React on page', () => {
+  it('can throw error', () => {
+    // throw new Error('error to throw...')
+  })
+
+  it('loads our site and clears storage', () => {
+    cy.visit('baseUrl');
+    cy.clearLocalStorage();
     cy.contains('React')
   })
 
